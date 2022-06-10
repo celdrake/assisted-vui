@@ -132,6 +132,26 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@patternfly/patternfly@^4.196.5":
+  version "4.196.7"
+  resolved "https://registry.yarnpkg.com/@patternfly/patternfly/-/patternfly-4.196.7.tgz#5f39c53e0a6a626ea6e3abfd5bcc2e3695818ceb"
+  integrity sha512-hA7Oww411e1p0/IXjC1I+4/1NNis9V+NVBxfUIpRwyuLbCIDHBdtMu2qAPLdKxXjuibV9EE6ZdlT7ra/kcFuJQ==
+
+"@patternfly/react-styles@^4.69.2":
+  version "4.71.3"
+  resolved "https://registry.yarnpkg.com/@patternfly/react-styles/-/react-styles-4.71.3.tgz#4f1cf4624a675751f035dc3bfa4cb3c6ca48e43b"
+  integrity sha512-JpMBIrJfco3JwK9KbJvjr+tKZidVhbkGrQT7GyWbYAwZ2bOmCmeCPJYc0xhAWcvNumn9a7AhYzAWPJVlQQue3g==
+
+"@patternfly/react-tokens@^4.71.2":
+  version "4.73.3"
+  resolved "https://registry.yarnpkg.com/@patternfly/react-tokens/-/react-tokens-4.73.3.tgz#dae690220c25c242d2c45ec571e46d8cdcc7de13"
+  integrity sha512-WyEcV9jiMZzscQMBhlDkypHw9qg0wbX7r/fe8HcWws+jnYWGVjwUdnr18ktI9aw/h/oQS46sirf8xbNTlIiQFg==
+
+"@popperjs/core@^2.11.5":
+  version "2.11.5"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
+  integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
+
 "@rushstack/eslint-patch@^1.1.0":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.1.3.tgz#6801033be7ff87a6b7cadaf5b337c9f366a3c4b0"
@@ -266,6 +286,24 @@
     "@vue/compiler-sfc" "^3.2.36"
     "@vue/reactivity" "^3.2.36"
 
+"@vue-patternfly/core@^0.1.0-beta.4":
+  version "0.1.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@vue-patternfly/core/-/core-0.1.0-beta.4.tgz#1cfc14e0ffeed69aac163ce6deb999b879a2f7a5"
+  integrity sha512-TqnXd05rTOiW3E6PJnoaq7+7dbD5jXLDnKPZ87P5oNYn7aw/2KunY4qRgQoZG2IYTR0aHNjQfh4pqfjI0DjDvg==
+  dependencies:
+    "@patternfly/patternfly" "^4.196.5"
+    "@patternfly/react-styles" "^4.69.2"
+    "@patternfly/react-tokens" "^4.71.2"
+    "@popperjs/core" "^2.11.5"
+    "@vue-patternfly/icons" "^0.2.0"
+    "@vueuse/core" "^8.5.0"
+    "@vueuse/integrations" "^8.5.0"
+
+"@vue-patternfly/icons@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@vue-patternfly/icons/-/icons-0.2.0.tgz#a77bcbd6aa857d78fe6f3719b0b7d3148b342194"
+  integrity sha512-ed8LEBmTSJkKHFlDIVCSbM4fUWRyXWyv8zNTANohfPWIZvqVxyR049ZpNIJBndzf6LlnDY9mCycUy69P28yaCw==
+
 "@vue/compiler-core@3.2.37", "@vue/compiler-core@^3.2.36":
   version "3.2.37"
   resolved "https://registry.yarnpkg.com/@vue/compiler-core/-/compiler-core-3.2.37.tgz#b3c42e04c0e0f2c496ff1784e543fbefe91e215a"
@@ -382,6 +420,36 @@
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@vue/tsconfig/-/tsconfig-0.1.3.tgz#4a61dbd29783d01ddab504276dcf0c2b6988654f"
   integrity sha512-kQVsh8yyWPvHpb8gIc9l/HIDiiVUy1amynLNpCy8p+FoCiZXCo6fQos5/097MmnNZc9AtseDsCrfkhqCrJ8Olg==
+
+"@vueuse/core@8.6.0", "@vueuse/core@^8.5.0":
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-8.6.0.tgz#a8f80363cc63d17382423f16beae57696f376e67"
+  integrity sha512-VirzExCm/N+QdrEWT7J4uSrvJ5hquKIAU9alQ37kUvIJk9XxCLxmfRnmekYc1kz2+6BnoyuKYXVmrMV351CB4w==
+  dependencies:
+    "@vueuse/metadata" "8.6.0"
+    "@vueuse/shared" "8.6.0"
+    vue-demi "*"
+
+"@vueuse/integrations@^8.5.0":
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/integrations/-/integrations-8.6.0.tgz#8d18ec1078e7e006f2772482e4cc853607c54c01"
+  integrity sha512-CTja5TF27KTi7wd9XivWTz3kBX9Z8ujlj+GEjfiHqQ+7OYARSM4mab1hLceMt9XVaGUAwaPeK7Adl9IZuP8Cjw==
+  dependencies:
+    "@vueuse/core" "8.6.0"
+    "@vueuse/shared" "8.6.0"
+    vue-demi "*"
+
+"@vueuse/metadata@8.6.0":
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/metadata/-/metadata-8.6.0.tgz#34771443a72ee891ae001a70aa05dd9a1d799372"
+  integrity sha512-F+CKPvaExsm7QgRr8y+ZNJFwXasn89rs5wth/HeX9lJ1q8XEt+HJ16Q5Sxh4rfG5YSKXrStveVge8TKvPjMjFA==
+
+"@vueuse/shared@8.6.0":
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-8.6.0.tgz#63dad9fc4b73a7fccbe5d6b97adeacf73d4fec41"
+  integrity sha512-Y/IVywZo7IfEoSSEtCYpkVEmPV7pU35mEIxV7PbD/D3ly18B3mEsBaPbtDkNM/QP3zAZ5mn4nEkOfddX4uwuIA==
+  dependencies:
+    vue-demi "*"
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
@@ -1925,6 +1993,11 @@ vite@^2.9.9:
     rollup "^2.59.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+vue-demi@*:
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.13.1.tgz#7604904c88be338418a10abbc94d5b8caa14cb8c"
+  integrity sha512-xmkJ56koG3ptpLnpgmIzk9/4nFf4CqduSJbUM0OdPoU87NwRuZ6x49OLhjSa/fC15fV+5CbEnrxU4oyE022svg==
 
 vue-eslint-parser@^8.0.0, vue-eslint-parser@^8.0.1:
   version "8.3.0"

@@ -3,8 +3,16 @@ import App from './App.vue'
 import router from './router'
 import { plugin, defaultConfig } from '@formkit/vue'
 
-const app = createApp(App)
+import '@patternfly/patternfly/patternfly.css';
+import VuePatternfly4 from '@vue-patternfly/core';
 
+const app = createApp(App);
+
+// Define the plugins
+app.use(VuePatternfly4);
 app.use(router)
-app.use(plugin, defaultConfig).mount('#app')
+app.use(plugin, defaultConfig)
+
+
+app.mount('#app')
 
