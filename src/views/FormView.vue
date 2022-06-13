@@ -2,13 +2,13 @@
   <div class="vue-form">
 
 
-    <FormKit type="form" v-model="formData" :form-class="submitted ? 'hide' : 'show'" @submit="submitHandler"
+    <FormKit type="form" :value="formData" :form-class="submitted ? 'hide' : 'show'" @submit="submitHandler"
       :actions="false">
 
       <h1>Welcome to Assisted V-UI Form!</h1>
 
       <pf-form>
-        <FormKit :type="pfTextField" label="Cluster name" name="cluster_name" help="Enter the cluster name"
+        <FormKit type="text" label="Cluster name" name="cluster_name" help="Enter the cluster name"
           validation="required" validation-visibility="live" />
         <FormKit :type="pfTextField" label="Openshift version" name="openshift_version"
           help="Enter the Openshift version" validation="required" validation-visibility="live" />
@@ -27,7 +27,10 @@ import { createInput } from '@formkit/vue';
 import TextField from '@/components/icons/form-inputs/TextField.vue';
 import { ref } from 'vue'
 const submitted = ref(false)
-const formData = ref({})
+const formData = ref({
+  cluster_name: 'My cluster',
+  openshift_version: '4.10.3',
+})
 const pfTextField = createInput(TextField)
 
 const submitHandler = async () => {

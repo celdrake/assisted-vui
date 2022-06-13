@@ -5,6 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <pf-text-input id="simple-form-name-01" name="simple-form-name-01" aria-describedby="simple-form-name-01-helper"
-        required />
+    <pf-text-input :id="context?.id" :value="context?._value" :name="context?._name"
+        aria-describedby="simple-form-name-01-helper" required />
+
 </template>
